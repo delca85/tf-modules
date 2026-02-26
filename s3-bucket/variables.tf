@@ -1,3 +1,3 @@
-variable "app_name" {
-  description = "Application name — used as bucket name prefix"
+variable "prefix" {
+  description = "Bucket name prefix"
 }

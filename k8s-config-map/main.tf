@@ -1,6 +1,6 @@
 resource "kubernetes_config_map" "app" {
   metadata {
-    name      = "${var.app_name}-config"
+    name      = "${var.prefix}-config"
     namespace = var.namespace
   }
 

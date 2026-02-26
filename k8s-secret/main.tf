@@ -1,11 +1,8 @@
 resource "kubernetes_secret" "app" {
   metadata {
-    name      = "${var.app_name}-secret"
+    name      = "${var.prefix}-secret"
     namespace = var.namespace
   }
 
-  data = {
-    db_password = "changeme"
-    api_key     = "local-dev-key"
-  }
+  data = var.data
 }

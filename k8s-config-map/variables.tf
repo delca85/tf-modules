@@ -1,5 +1,5 @@
-variable "app_name" {
-  description = "Application name — used as config map name prefix"
+variable "prefix" {
+  description = "Config map name prefix"
 }
 
 variable "namespace" {

@@ -1,3 +1,10 @@
-variable "app_name" {
-  description = "Application name — used as namespace name"
+variable "name" {
+  description = "Namespace name"
+  type        = string
+}
+
+variable "labels" {
+  description = "Labels to apply to the namespace"
+  type        = map(string)
+  default     = {}
 }

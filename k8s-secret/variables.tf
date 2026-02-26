@@ -1,7 +1,12 @@
-variable "app_name" {
-  description = "Application name — used as secret name prefix"
+variable "prefix" {
+  description = "Secret name prefix"
 }
 
 variable "namespace" {
   description = "Kubernetes namespace to deploy into"
+}
+
+variable "data" {
+  description = "The secret data"
+  type        = map(string)
 }
